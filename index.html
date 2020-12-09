@@ -3,46 +3,43 @@
 
   <head>
     <meta charset="utf-8">
-
     <title>Week 4</title>
-
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
   </head>
 
 <body>
-    <header>
-  <nav class="navbar navbar-expand-md fixed-top navbar-light" style="background-color: #e3f2fd;">
-    <a class="navbar-brand" href="#">Sari Sari Style</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top navbar-light" style="background-color: #e3f2fd;">
+      <a class="navbarbrand" href="#">Sari Sari Style</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="navlink" href="#">Home <span class="sr-only"></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#featured">Featured</a>
+          <a class="navlink" href="#featured">Featured</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#fashion">Fashion Favorite</a>
+          <a class="navlink" href="#fashion">Fashion Favorite</a>
         </li>
       </ul>
-      <form class="form-inline mt-2 mt-md-0">
+
+      <form class="form-inline">
         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <button class="btn search" type="submit">Search</button>
       </form>
-    </div>
-  </nav>
-</header>
+      </div>
+    </nav>
+  </header>
 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -98,11 +95,6 @@
     </a>
   </div>
 
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
   <div class="container marketing">
 
         <!-- Three columns of text below the carousel -->
@@ -110,35 +102,34 @@
           <div class="col-lg-3">
             <img class="rounded-circle" src="./images/trenchcoat" alt="trenchcoat" width="220" height="180">
             <h2>The Trench Coat</h2>
-            <p>It's finally starting to feel like Fall in Los Angeles! Trade in the sweatshirt for a trench coat.</p>
+            <p class="head">It's finally starting to feel like Fall in Los Angeles! Trade in the sweatshirt for a trench coat.</p>
             <p><a class="btn btn-secondary" href="#" role="button">Read</a></p>
-          </div><!-- /.col-lg-4 -->
+          </div>
           <div class="col-lg-3">
             <img class="rounded-circle" src="./images/lipsticks.jpeg" alt="Lipstick" width="220" height="180">
             <h2>Lipstick Selector</h2>
-            <p>Try our virtual reality lipstick feature to try on all Sari's favorite seasonal lip colors.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Explore</a></p>
-          </div><!-- /.col-lg-4 -->
+            <p class="head">Try our virtual reality lipstick feature to try on all Sari's favorite seasonal lip colors.</p>
+            <p class="head"><a class="btn btn-secondary" href="#" role="button">Explore</a></p>
+          </div>
           <div class="col-lg-3">
             <img class="rounded-circle" src="./images/interior.png" alt="interior" width="220" height="180">
             <h2>Interior</h2>
-            <p>This thoughtfully designed home only uses products from local Los Angeles vintage thrift shops. View the home and visit the thrift shop for ultimate savings.</p>
+            <p class="head">This thoughtfully designed home only uses products from local Los Angeles vintage thrift shops. View the home and visit the thrift shop for ultimate savings.</p>
             <p><a class="btn btn-secondary" href="#" role="button">View Details</a></p>
-          </div><!-- /.col-lg-4 -->
+          </div>
           <div class="col-lg-3">
             <img class="rounded-circle" src="./images/seamoss.png" alt="Health" width="220" height="180">
             <h2>Superfood: Seamoss</h2>
-            <p>Seamoss is the new craze. Our Health Editor added seamoss into her diet for the past month and the results are noticeable.</p>
+            <p class="head">Seamoss is the new craze. Our Health Editor added seamoss into her diet for the past month and the results are noticeable.</p>
             <p><a class="btn btn-secondary" href="#" role="button">Read</a></p>
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
+          </div>
+        </div>
 
+        <hr>
 
-        <hr class="featurette-divider" id="fashion">
-
-        <div class="row featurette">
+        <div id="fashion" class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">The Slip Dress<br> <span class="text-muted">Get the 90s Supermodel Look</span></h2>
+            <h3 class="heading">The Slip Dress: 90s Supermodel</h3>
             <p class="lead">Minimal in form, the slip dress is adored and making a full come back this season. The favorite 90s aesthetic has resurfaced completely. A true Renaissance in contemporary fashion.</p>
           </div>
           <div class="col-md-5">
@@ -146,11 +137,10 @@
           </div>
         </div>
 
-        <hr class="featurette-divider">
-
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading"> Sultry Beginnings <br> <span class="text-muted"> Rita Hayworth & Lace </span></h2>
+            <h3 class="heading"> Sultry Beginnings: Rita Hayworth & Lace</h3>
+
             <p class="lead">Popularized in 1941 by Ms.Hayworth herself, the slip dress became synomous with sex appeal.  Soon slinky fabrics and lace became popularized outside the bedroom, onto the runway and ultimately in everyday style.</p>
           </div>
           <div class="col-md-5 order-md-1">
@@ -158,29 +148,22 @@
           </div>
         </div>
 
-        <hr class="featurette-divider">
-
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading"> Get the Look <br> <span class="text-muted"> AwakeAwake Spring 2020</span></h2>
+            <h3 class="heading"> Get the Look: AwakeAwake Spring 2020</h3>
             <p class="lead">AwakeAwake's slinky satin slip dress is perfect for this season. Paired with an oversized cardigan and Doc Marten's, you can create a look tettering on soft and hard. </p>
           </div>
           <div class="col-md-5">
             <img class="featurette-image img-fluid mx-auto" src="./images/thelook.png" alt="awakeawake">
           </div>
         </div>
-
-        <hr class="featurette-divider">
-
-        <!-- /END THE FEATURETTES -->
-
       </div>
 
-    <hr class="featurette-divider">
+    <hr>
 
   <footer class="container">
     <p class="float-right"><a href="#">Back to top</a></p>
-    <p>&copy; Sari Sari Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p>&copy; Sari Sari Inc.
   </footer>
 </body>
 
